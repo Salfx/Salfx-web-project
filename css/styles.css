@@ -1,67 +1,26 @@
 /* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #0f172a;
-    font-family: Arial, sans-serif;
-    color: #e5e7eb;
+    background:
+        linear-gradient(
+            to bottom,
+            #123524,
+            #1b4332
+        );
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    color: #f5f5f5;
+
     margin: 0;
     padding: 0;
-}
 
-
-
-
-
-/* NAVIGATION BAR */
-nav {
-    background-color: #020617;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: #e5e7eb;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #22c55e;
-}
-
-
-
-
-
-/* HEADERS */
-h1 {
-    color: #f8fafc;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-h2 {
-    color: #94a3b8;
-    font-size: 28px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-h3 {
-    color: #64748b;
-    font-size: 22px;
-    margin-left: 20px;
-}
-
-
-
-
-
-/* TEXT */
-p {
-    font-size: 18px;
-    margin: 15px 20px;
     line-height: 1.6;
 }
 
@@ -69,12 +28,141 @@ p {
 
 
 
-/* LIST */
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #081c15;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+nav a {
+
+    color: #d8f3dc;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+
+    color: #52b788;
+}
+
+
+
+
+
+
+
+/* MAIN */
+
+main {
+
+    padding: 40px 20px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* SECTIONS */
+
+section,
+article {
+
+    background-color:
+        rgba(255,255,255,0.03);
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* HEADINGS */
+
+h1 {
+
+    color: #ffffff;
+
+    font-size: 40px;
+
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+h2 {
+
+    color: #95d5b2;
+
+    font-size: 28px;
+
+    margin-top: 25px;
+}
+
+h3 {
+
+    color: #74c69d;
+
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+/* TEXT */
+
+p {
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+/* LISTS */
+
 ul {
-    margin: 20px 40px;
+
+    margin-left: 25px;
 }
 
 li {
+
     margin-bottom: 10px;
 }
 
@@ -82,97 +170,382 @@ li {
 
 
 
-/* IMAGE */
+
+
+/* IMAGES */
+
 img {
+
     display: block;
-    width: 400px;
-    max-width: 90%;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    height: auto;
+
     margin: 20px auto;
-    border-radius: 8px;
+
+    border-radius: 10px;
 }
+
+
 
 
 
 
 
 /* LINKS */
+
 a {
-    color: #38bdf8;
+
+    color: #52b788;
 }
 
 a:hover {
-    color: #f87171;
+
+    color: #b7e4c7;
 }
 
 
 
 
 
-/* FORM + BUTTON */
+
+
+/* FORMS */
+
 form {
-    margin-left: 20px;
-    margin-top: 10px;
+
+    max-width: 400px;
+
+    margin: 20px auto;
 }
 
-#message {
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 18px;
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
 }
 
 input {
-    padding: 8px;
-    font-size: 16px;
-    margin-right: 10px;
-    border-radius: 4px;
+
+    padding: 10px;
+
+    width: 300px;
+
+    max-width: 90%;
+
+    border-radius: 5px;
+
     border: none;
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
 }
 
+input:focus,
+button:focus,
+a:focus {
+
+    outline: 3px solid #95d5b2;
+}
+
+
+
+
+
+
+
+/* BUTTONS */
+
 button {
-    background-color: #020617;
-    color: #22c55e;
+
+    margin-top: 15px;
+
+    background-color: #1b4332;
+
+    color: white;
+
     border: none;
-    padding: 8px 12px;
+
+    padding: 10px 15px;
+
     cursor: pointer;
-    border-radius: 4px;
-    font-weight: bold;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #1e293b;
+
+    background-color: #2d6a4f;
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
 }
 
 
 
 
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 600px) {
+
+
+/* MESSAGES */
+
+#message,
+#newsletterMessage {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* PRODUCT CARDS */
+
+.card-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.card {
+
+    background-color: #1b4332;
+
+    padding: 20px;
+
+    width: 250px;
+
+    border-radius: 10px;
+
+    min-height: 350px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+}
+
+.card h2 {
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+/* PRODUCT IMAGES */
+
+.card img {
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* SEARCH BAR */
+
+#searchInput {
+
+    display: block;
+
+    margin: 20px auto;
+
+    padding: 10px;
+
+    width: 60%;
+
+    border-radius: 5px;
+
+    border: none;
+}
+
+
+
+
+
+
+
+/* TABLES */
+
+table {
+
+    width: 80%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+
+    background-color: #1b4332;
+}
+
+th,
+td {
+
+    border: 1px solid #95d5b2;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+th {
+
+    background-color: #2d6a4f;
+}
+
+
+
+
+
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #081c15;
+
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
 
     nav a {
+
         display: block;
+
         margin: 10px 0;
     }
 
     h1 {
-        font-size: 28px;
+
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 22px;
+
+        font-size: 24px;
     }
 
     p {
+
         font-size: 16px;
     }
 
+    main {
+
+        padding: 15px;
+    }
+
+    section {
+
+        padding: 20px;
+    }
+
+    .card-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
     input {
-        display: block;
-        margin-bottom: 10px;
-        width: 80%;
+
+        width: 90%;
     }
 
     button {
-        width: 80%;
+
+        width: 90%;
+    }
+
+    table {
+
+        width: 95%;
+    }
+
+    .card {
+
+        min-height: auto;
     }
 }
