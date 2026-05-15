@@ -1,99 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact GreenTech Solutions</title>
+# GreenTech Solutions Final Project
 
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+## Project Description
+This project is a responsive and accessible website created for GreenTech Solutions, a company focused on sustainable technology and eco-friendly innovation. The website provides information about the company, its products, sustainability resources, and contact information.
 
+## Features
+- Responsive web design
+- Accessible navigation and semantic HTML
+- Product search functionality
+- Contact form validation using JavaScript
+- Newsletter subscription form
+- Mobile-friendly layout
+- Optimized images for performance
 
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- WCAG Accessibility Practices
 
+## How To Run
+1. Download or clone the repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `final-index.html` in a browser or use Live Server.
 
-
-<body>
-
-    <nav>
-        <a href="../final-index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-        <a href="final.html">Final</a>
-    </nav>
-
-
-
-
-
-
-
-    <main>
-
-        <h1>Contact Us</h1>
-
-        <p>Email: support@greentechsolutions.com</p>
-        <p>Phone: (555) 123-4567</p>
-        <p>Address: 123 Green Street, Eco City, NM</p>
-
-
-        <form id="form">
-
-            <label for="nameInput">Name:</label>
-
-
-            <input
-                type="text"
-                id="nameInput"
-                placeholder="Enter your name"
-                required>
-
-
-            <label for="emailInput">Email:</label>
-
-
-            <input
-                type="email"
-                id="emailInput"
-                placeholder="Enter your email"
-                required>
-
-
-            <button type="submit">Submit</button>
-
-
-        </form>
-
-
-        <p id="message">Your message will appear here.</p>
-
-
-    </main>
-
-
-
-
-
-
-
-    <footer>
-        <p>
-            © 2026 GreenTech Solutions. All rights reserved.
-        </p>
-    </footer>
-
-
-
-
-
-
-    <script src="../js/script.js"></script>
-
-
-
-
-
-
-</body>
-</html>
+## Pages Included
+- Home
+- About
+- Products
+- Resources
+- Contact
+- Final Project Overview
